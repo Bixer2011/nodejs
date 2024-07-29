@@ -8,7 +8,7 @@
   <div id = "qrcode"></div>
 </main>
 
- 
+<body>    
 <scripts>
   const data = [
     {
@@ -18,8 +18,8 @@
     {
         name:"anything",
         Price:"1m",
-    }
-];
+    },
+    ];
 
 const in_string = JSON.stringify(data);
 var qrcode = new QRCode ("qrcode", in_string);
