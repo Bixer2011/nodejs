@@ -1,29 +1,41 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <html>
+    <head>
+      <title>Page Title</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    </head>
+    <main>
+      <div id="qrcode"></div>
+    </main>
+
+    <body>
+      <script>
+        const data = [
+          { name: "potato", Price: 700000 },
+          { name: "anything", Price: "1m" },
+        ];
+        const in_string = JSON.stringify(data);
+        var qrcode = new QRCode("qrcode", in_string);
+      </script>
+    </body>
+  </html>
+</html> -->
+
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
-    <scripts>https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js</scripts>
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="index.css"> </head>
 </head>
-<main>
-  <div id = "qrcode"></div>
-</main>
-
-<body>    
-<scripts>
-  const data = [
-    {
-        name:"potato",
-        Price: 700000,
-    },
-    {
-        name:"anything",
-        Price:"1m",
-    },
-    ];
-
-const in_string = JSON.stringify(data);
-var qrcode = new QRCode ("qrcode", in_string);
-</scripts>
-
+<body>
+  <input type="text" id="input-data" placeholder="Enter data">
+  <button onclick="generateQRCode()">Generate QR Code</button>
+  <div id="qrcode"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+    
+  </script>
+  <script src="index.js"></script>
 </body>
 </html>
+
