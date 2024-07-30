@@ -24,18 +24,25 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-  <title>QR Code Generator</title>
-  <link rel="stylesheet" href="index.css"> </head>
-</head>
-<body>
-  <input type="text" id="input-data" placeholder="Enter data">
-  <button onclick="generateQRCode()">Generate QR Code</button>
-  <div id="qrcode"></div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
-    
-  </script>
-  <script src="index.js"></script>
-</body>
-</html>
+  <head>
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="header.css" />
+  </head>
 
+  <header class="header">
+    <nav>
+      <ul>
+        <li><a href="url.html">Url</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <body>
+    <input type="text" id="input-data" placeholder="Enter data" />
+    <button onclick="generateQRCode()">Generate QR Code</button>
+    <div id="qrcode"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
